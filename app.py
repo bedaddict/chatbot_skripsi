@@ -55,7 +55,7 @@ def build_index_if_needed():
     if len(os.listdir(CHROMA_DIR)) > 0:
         return
 
-    st.info("⏳ Membangun database pengetahuan pertama kali...")
+    st.info("Membangun database pengetahuan pertama kali...")
 
     if not os.path.exists(DATA_PATH):
         st.error(f"❌ File data tidak ditemukan: {DATA_PATH}")
@@ -131,7 +131,7 @@ st.markdown("""
 
 st.markdown("""
 <div class="header-box">
-    <h2>🥇 Asisten Emas BSI</h2>
+    <h2>Asisten Emas BSI</h2>
     <p>Edukasi Investasi Emas Digital di Byond by BSI</p>
 </div>
 """, unsafe_allow_html=True)
@@ -211,7 +211,7 @@ Saya siap membantu kamu memahami:
 - Cicil Emas
 - Gadai Emas
 
-di Byond by BSI 🥇"""
+di Byond by BSI"""
     }]
 
 if "chat_history" not in st.session_state:
