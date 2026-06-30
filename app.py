@@ -202,7 +202,7 @@ if "chain" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = [{
         "role": "assistant",
-        "content": """Halo! 👋
+        "content": """Halo!
 
 Saya asisten edukasi emas BSI.
 
