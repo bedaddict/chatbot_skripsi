@@ -1,3 +1,4 @@
+# app.py
 import streamlit as st
 from rag.chatbot import load_rag_chain, ask
 
@@ -7,6 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
+# Custom CSS mirip branding BSI
 st.markdown("""
 <style>
     .main { background: #f8f9fa; }
@@ -32,6 +34,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Init session
 if "chain" not in st.session_state:
     with st.spinner("Memuat model AI..."):
         st.session_state.chain = load_rag_chain()
@@ -40,10 +43,12 @@ if "messages" not in st.session_state:
         {"role": "assistant", "content": "Halo! Saya asisten edukasi emas BSI. Saya bisa membantu kamu memahami produk emas di Byond by BSI seperti Tabungan Emas, Cicil Emas, dan Gadai Emas. Ada yang ingin kamu tanyakan?"}
     ]
 
+# Tampilkan riwayat chat
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
+# Quick question buttons
 if len(st.session_state.messages) == 1:
     st.markdown("**Pertanyaan populer:**")
     cols = st.columns(2)
@@ -58,6 +63,7 @@ if len(st.session_state.messages) == 1:
             st.session_state.messages.append({"role": "user", "content": q})
             st.rerun()
 
+# Input chat
 if prompt := st.chat_input("Tanya tentang emas BSI..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
@@ -68,6 +74,7 @@ if prompt := st.chat_input("Tanya tentang emas BSI..."):
             result = ask(st.session_state.chain, prompt)
         st.markdown(result["answer"])
 
+        # Tampilkan sumber
         if result["sources"]:
             st.markdown("**Sumber:**")
             for src in set(result["sources"]):
