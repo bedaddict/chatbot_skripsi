@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 EMBED_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
-CHROMA_DIR = os.path.join(BASE_DIR, "data", "chroma_db_v2")
+CHROMA_DIR = os.path.join(BASE_DIR, "data", "chroma_db_v3")
 DATA_PATH = os.path.join(BASE_DIR, "data", "raw_bsi_data.json")
 
 SYSTEM_PROMPT = """Kamu adalah asisten edukasi investasi emas digital BSI yang ramah, informatif, dan terpercaya.
