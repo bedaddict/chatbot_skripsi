@@ -21,6 +21,13 @@
     "char_count": 400
 },
   {
+    "source": "Tarif Layanan BSI Tabungan",
+    "url": "https://www.bankbsi.co.id/produk&layanan/tipe/info-biaya-layanan-bank/parent/produk/tarif-layanan-bsi-tabungan",
+    "scraped_at": "2026-08-02T22:00:00",
+    "content": "Menabung uang reguler di BSI sangat berbeda dengan menabung emas. Berdasarkan rincian Tarif Layanan BSI Tabungan, setoran awal untuk membuka rekening tabungan reguler bervariasi. Untuk BSI Tabungan Easy Wadiah, BSI Tabungan Easy Mudharabah, BSI Tabungan Haji Indonesia, BSI Tabungan Haji Muda Indonesia, dan BSI Tabungan Junior, setoran awalnya adalah sebesar Rp100.000,-. Sementara itu, untuk BSI Tabungan Bisnis, setoran awalnya adalah Rp1.000.000,-. Jika pengguna bertanya tentang 'minimal nabung di BSI' atau 'setoran awal tabungan BSI' tanpa menyebut kata 'emas', berikan informasi setoran awal tabungan reguler ini dan tegaskan perbedaannya dengan Tabungan Emas yang minimal pembeliannya hanya Rp50.000.",
+    "char_count": 724
+},
+  {
     "source": "Cicil Emas BSI Mobile dan BYOND",
     "url": "https://www.bankbsi.co.id/produk&layanan/produk/cicil-emas-bsi-mobile-dan-byond-by-bsi",
     "scraped_at": "2026-05-25T16:58:42.491459",
