@@ -3,7 +3,7 @@ import json
 import streamlit as st
 
 # ============================================================
-# PAGE CONFIG (HARUS PALING ATAS)
+# PAGE CONFIG
 # ============================================================
 st.set_page_config(
     page_title="Asisten Emas BSI",
@@ -51,7 +51,7 @@ Konteks dari database BSI:
 {context}"""
 
 # ============================================================
-# BUILD INDEX OTOMATIS
+# BUILD INDEX
 # ============================================================
 def build_index_if_needed():
 
@@ -227,7 +227,7 @@ if "chat_history" not in st.session_state:
 # ============================================================
 if len(st.session_state.messages) == 1:
 
-    st.markdown("### 💡 Pertanyaan Populer")
+    st.markdown("### Pertanyaan Populer")
 
     quick_qs = [
         "Apa itu Tabungan Emas BSI?",
