@@ -169,11 +169,11 @@ def load_chain():
     )
 
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
-        api_key=groq_key,
+        model='openai/gpt-oss-120b',
+        api_key=groq_api_key,
         temperature=0.3,
         max_tokens=1024
-    )
+)
 
     prompt = ChatPromptTemplate.from_messages([
         ("system", SYSTEM_PROMPT),
